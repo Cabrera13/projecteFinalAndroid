@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ApplicationClass</string>
+    <string name="formulariinici">Formulari Autoescola</string>
+    <string name="ButtonInici1">Consultar Formulari</string>
+    <string name="ButtonInici2">Crear Formulari</string>
+    <string name="ButtonInici3">Editar Formulari</string>
+    <string name="ButtonInici4">Esborrar Formulari</string>
+
+</resources>

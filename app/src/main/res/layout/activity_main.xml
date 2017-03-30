@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ecf0f1"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="1200dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.josep.FormulariAutoescola.MainActivity"
+    >
+
+
+    <LinearLayout
+        android:background="#ecf0f1"
+        android:id="@+id/activity_main2"
+        android:layout_width="match_parent"
+        android:layout_height="1200dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        tools:context="com.example.josep.FormulariAutoescola.MainActivity"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Test 1:"
+            android:layout_alignBaseline="@+id/editText1"
+            android:layout_alignBottom="@+id/editText1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView0"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="120dp"
+            android:layout_weight="0.73"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="22sp"
+            android:textStyle="normal|bold" />
+
+
+        <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quants anys has de portar la L?: "
+        android:layout_below="@+id/editText1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft= "0dp"
+        android:layout_marginTop="0dp"
+            android:textColor="@android:color/black"
+            android:textStyle="normal|bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:text="Un any"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioButton1"
+        android:layout_alignRight="@+id/radioButton1"
+        android:layout_alignEnd="@+id/radioButton1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft= "50dp"
+        android:id="@+id/RadioButton1"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold"
+        android:textSize="12sp"
+        android:buttonTint="#3498db"
+
+        android:textColor="@android:color/black" />
+
+
+    <RadioButton
+        android:text="Dos anys"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+            android:buttonTint="#3498db"
+
+            android:id="@+id/RadioButton2"
+        android:layout_below="@+id/radioButton2"
+        android:layout_marginLeft= "50dp"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:textStyle="normal|bold" />
+    </RadioGroup>
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:text="Quina és la tasa de alcoholemia màxima de un novell?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_marginLeft="0dp"
+        android:layout_alignBaseline="@+id/radioButton1"
+        android:layout_alignBottom="@+id/radioButton1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox1"
+        android:layout_alignStart="@+id/checkBox1"
+        android:layout_marginLeft="50dp"
+        android:buttonTint="#3498db"
+
+        android:layout_below="@+id/checkBox1"
+        android:layout_marginTop="20dp"
+        android:text="0,25"
+        android:textColor="@android:color/black"
+        android:focusable="false"
+        android:textStyle="normal|bold" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:text="0,15"
+        android:buttonTint="#3498db"
+
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_alignEnd="@+id/editText1"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quin és el número de punts que té un conductor novell?"
+        android:layout_below="@+id/checkBox1"
+        android:layout_alignRight="@+id/checkBox1"
+        android:layout_alignEnd="@+id/checkBox1"
+        android:layout_marginTop="15dp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+
+            android:layout_marginLeft="50dp"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black" />
+
+        <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Segons la imatge, què s'ha de fer en aquest cas?"
+        android:layout_below="@+id/editText1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft= "0dp"
+        android:layout_marginTop="0dp"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@android:drawable/alert_dark_frame"
+        android:layout_below="@+id/RadioButton2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/imageView1"
+        android:layout_toLeftOf="@+id/checkBox1"
+        android:layout_toStartOf="@+id/checkBox1"
+        android:src="@drawable/semafor"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_height="200dp">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:text="Parar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/RadioButton7"
+                    android:layout_alignRight="@+id/radioButton1"
+                    android:layout_alignEnd="@+id/radioButton1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft= "100dp"
+                    android:id="@+id/RadioButton3"
+                    android:buttonTint="#3498db"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal|bold" />
+                android:id="@+id/radioButton2" />
+
+            <RadioButton
+            android:text="Continuar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:id="@+id/RadioButton4"
+            android:layout_below="@+id/radioButton2"
+            android:layout_marginLeft= "100dp"
+            android:buttonTint="#3498db"
+            android:textColor="@android:color/black"
+            android:textStyle="normal|bold"
+                />
+            </RadioGroup>
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quin vehicle té prioritat?"
+        android:layout_below="@+id/editText1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft= "0dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <ImageView
+
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@android:drawable/alert_dark_frame"
+            android:layout_below="@+id/RadioButton2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="60dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/prioridadcruce"
+
+            android:layout_toLeftOf="@+id/checkBox1"
+            android:layout_toStartOf="@+id/checkBox1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <RadioButton
+                android:text="Vermell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioButton9"
+                android:layout_alignRight="@+id/radioButton1"
+                android:layout_alignEnd="@+id/radioButton1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft= "100dp"
+                android:id="@+id/RadioButton5"
+                android:buttonTint="#3498db"
+
+                android:textColor="@android:color/black"
+                android:textStyle="normal|bold" />
+            android:id="@+id/radioButton2" />
+            <RadioButton
+                android:text="Blau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioButton6"
+                android:layout_alignRight="@+id/radioButton1"
+                android:layout_alignEnd="@+id/radioButton1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft= "100dp"
+                android:id="@+id/RadioButton6"
+                android:textColor="@android:color/black"
+                android:buttonTint="#3498db"
+
+                android:textStyle="normal|bold" />
+                android:id="@+id/radioButton2" />
+
+            <RadioButton
+                android:text="Blanc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:buttonTint="#3498db"
+
+                android:id="@+id/RadioButton7"
+                android:layout_below="@+id/radioButton20"
+                android:layout_marginLeft= "100dp"
+                android:textColor="@android:color/black"
+                android:textStyle="normal|bold" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quina és la velocitat màxima en via urbana? "
+            android:layout_below="@+id/editText1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft= "0dp"
+            android:layout_marginTop="0dp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/black" />
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Es pot girar a la esquerre amb aquesta senyal? "
+            android:layout_below="@+id/editText1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft= "0dp"
+            android:layout_marginTop="0dp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/black" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:srcCompat="@android:drawable/alert_dark_frame"
+                android:layout_below="@+id/RadioButton2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="40dp"
+                android:id="@+id/imageView3"
+                android:layout_toLeftOf="@+id/checkBox1"
+                android:layout_toStartOf="@+id/checkBox1"
+                android:src="@drawable/prohibidopaso"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <RadioButton
+                    android:text="Si"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/RadioButton7"
+                    android:layout_alignRight="@+id/radioButton1"
+                    android:layout_alignEnd="@+id/radioButton1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft= "100dp"
+                    android:id="@+id/RadioButton8"
+                    android:buttonTint="#3498db"
+
+                    android:textStyle="normal|bold"
+                    android:textColor="@android:color/black" />
+
+
+                <RadioButton
+                    android:text="No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/RadioButton9"
+                    android:layout_below="@+id/radioButton2"
+                    android:layout_marginLeft= "100dp"
+                    android:buttonTint="#3498db"
+
+                    android:textStyle="normal|bold"
+                    android:textColor="@android:color/black" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <Switch
+                android:text="Quan estiguis llest, activa'm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/switchFinal"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textStyle="normal|bold"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+            android:id="@+id/LinearButton"
+
+            >
+
+
+            <Button
+        android:text="Guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonGuardar"
+
+            android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="110dp"
+            android:background="#3498db"
+            />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

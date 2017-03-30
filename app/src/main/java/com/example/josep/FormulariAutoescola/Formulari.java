@@ -55,11 +55,12 @@ public class Formulari extends AppCompatActivity {
 
                 instancia.setPosicio(position);
                 SingletonProject.getInstance().afegirElement(item);
-                parent.getChildAt(position).setBackgroundResource(R.drawable.values2);
                 try {
                     parent.getChildAt(x).setBackgroundResource(R.drawable.values);
                 }
                 catch (NullPointerException e){}
+                parent.getChildAt(position).setBackgroundResource(R.drawable.values2);
+
             }
         });
 

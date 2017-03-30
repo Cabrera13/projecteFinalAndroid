@@ -287,7 +287,15 @@ public class Main2Activity extends AppCompatActivity {
                 public void onClick(View v) {
                     //Declaracio de variables per realitzar validacions de si el botó esta en posició de guardar o editar
                     if (instancia.getPosicio() != -1) {
-                        arrayInstancies.get(SingletonProject.getInstance().getPosicio()).setPreguntesIncorrectes(0);
+                        Bundle extras = getIntent().getExtras();
+
+                        //Si això no es diferent a null (En teoria s'ha de complir sempre)
+                        if (extras != null) {
+                            String mode = extras.getString("mode");
+                            if (!mode.equals("afegir"))
+                                arrayInstancies.get(SingletonProject.getInstance().getPosicio()).setPreguntesIncorrectes(0);
+                        }
+
                     }
                     int numErrors = 0;
                     if (radioButton2.isChecked()){

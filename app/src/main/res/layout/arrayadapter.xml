@@ -11,6 +11,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.josep.FormulariAutoescola.Formulari"
     android:weightSum="1"
+    android:background="@drawable/values"
     >
 
     <LinearLayout

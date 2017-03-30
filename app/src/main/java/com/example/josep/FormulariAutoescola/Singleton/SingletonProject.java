@@ -22,8 +22,8 @@ public class SingletonProject {
         this.posicio = -1;
         this.login = false;
 
-        ObjecteGuardar un = new ObjecteGuardar("Josep", "jssdlcu@gmail.com", "24-12-15", "Test 1", Boolean.TRUE, Boolean.TRUE, "5", Boolean.TRUE, Boolean.TRUE,Boolean.TRUE, Boolean.TRUE, "6", Boolean.TRUE, Boolean.TRUE, Boolean.TRUE, Boolean.TRUE, Boolean.TRUE, 5);
-        ObjecteGuardar dos = new ObjecteGuardar("Juan", "juan@outlook.es", "12-01-17", "Test 2", Boolean.TRUE, Boolean.TRUE, "5", Boolean.TRUE, Boolean.TRUE,Boolean.TRUE, Boolean.TRUE, "6", Boolean.TRUE, Boolean.TRUE, Boolean.TRUE, Boolean.TRUE, Boolean.TRUE, 4);
+        ObjecteGuardar un = new ObjecteGuardar("Josep", "jssdlcu@gmail.com", "24-12-15", "Test 1", Boolean.TRUE, Boolean.FALSE, "5", Boolean.FALSE, Boolean.TRUE,Boolean.FALSE, Boolean.TRUE, "6", Boolean.FALSE, Boolean.TRUE, Boolean.FALSE, Boolean.FALSE, Boolean.TRUE, 5);
+        ObjecteGuardar dos = new ObjecteGuardar("Juan", "juan@outlook.es", "12-01-17", "Test 2", Boolean.TRUE, Boolean.FALSE, "5", Boolean.FALSE, Boolean.TRUE,Boolean.FALSE, Boolean.TRUE, "6", Boolean.FALSE, Boolean.TRUE, Boolean.FALSE, Boolean.FALSE, Boolean.TRUE, 4);
 
         this.list.add(un);
         this.list.add(dos);

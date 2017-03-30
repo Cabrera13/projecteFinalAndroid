@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -54,9 +55,9 @@ public class Formulari extends AppCompatActivity {
 
                 instancia.setPosicio(position);
                 SingletonProject.getInstance().afegirElement(item);
-                parent.getChildAt(position).setBackgroundColor(Color.BLUE);
+                parent.getChildAt(position).setBackgroundResource(R.drawable.values2);
                 try {
-                    parent.getChildAt(x).setBackgroundColor(Color.parseColor("#ecf0f1"));
+                    parent.getChildAt(x).setBackgroundResource(R.drawable.values);
                 }
                 catch (NullPointerException e){}
             }

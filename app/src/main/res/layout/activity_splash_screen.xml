@@ -19,24 +19,25 @@
         android:layout_below="@+id/editText1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft= "100dp"
+        android:layout_marginLeft= "88dp"
         android:layout_marginTop="0dp"
         android:textColor="@android:color/black"
         android:textStyle="normal|bold"
-        android:layout_height="20dp" />
+        android:layout_height="20dp"
+        android:textAlignment="center" />
 
     <ImageView
-        android:layout_width="386dp"
+        android:layout_width="wrap_content"
         android:layout_height="423dp"
         android:layout_below="@+id/RadioButton2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginRight="800dp"
+        android:layout_marginRight="0dp"
         android:id="@+id/imageView1"
         android:layout_toLeftOf="@+id/checkBox1"
         android:layout_toStartOf="@+id/checkBox1"
         android:src="@drawable/kk"
-        android:layout_weight="0.20" />
+        android:layout_weight="0.46" />
 
     <TextView
         android:text="API 19"

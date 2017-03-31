@@ -77,13 +77,11 @@ public class Formulari extends AppCompatActivity {
         consultarFormulari = (Button) findViewById(R.id.consultarFormulari);
         final SingletonProject instancia = SingletonProject.getInstance();
         final ArrayList<ObjecteGuardar> arrayInstancies = instancia.getList();
-
         final ElementAdapter adapter = new ElementAdapter(this, R.layout.arrayadapter, arrayInstancies );
         list.setAdapter(adapter);
         adapter.notifyDataSetChanged();
 
-
-
+        
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView parent, View view, int position, long id) {

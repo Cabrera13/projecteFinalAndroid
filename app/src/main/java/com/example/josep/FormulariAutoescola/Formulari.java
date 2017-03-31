@@ -4,21 +4,31 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
+import android.support.annotation.DrawableRes;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.ActionMode;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
 import com.example.josep.FormulariAutoescola.Singleton.SingletonProject;
 
 import java.util.ArrayList;
+
+import static android.R.attr.mode;
 
 public class Formulari extends AppCompatActivity {
     final Context context = this;
@@ -27,13 +37,39 @@ public class Formulari extends AppCompatActivity {
     Button editarFormulari;
     Button esborrarFormulari;
     Button consultarFormulari;
+    MenuItem menu;
 
+    private MenuItem guardar;
+    private MenuItem editar;
+    private MenuItem borrar;
+
+/*
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.action_bar_list, menu);
+        guardar = menu.getItem(0);
+        editar =  menu.getItem(1);
+        editar.setEnabled(false);
+        editar.setVisible(false);
+        return true;
+    }
+
+
+    public boolean onCreateActionMode(ActionMode mode, Menu menu) {
+        MenuInflater inflater = mode.getMenuInflater();
+        inflater.inflate(R.menu.action_bar_list, menu);
+        menu.findItem(R.id.itemBorrar).setVisible(true);
+        menu.findItem(R.id.itemEditar).setVisible(true);
+        menu.findItem(R.id.itemGuardar).setVisible(true);
+        return true;
+    }
+*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
         setContentView(R.layout.activity_formulari);
+
+
         ListView list = (ListView) findViewById(R.id.listView);
         afegirFormulari = (Button) findViewById(R.id.crearFormulari);
         editarFormulari = (Button) findViewById(R.id.editarFormulari);
@@ -46,12 +82,15 @@ public class Formulari extends AppCompatActivity {
         list.setAdapter(adapter);
         adapter.notifyDataSetChanged();
 
+
+
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView parent, View view, int position, long id) {
                 view.setSelected(true);
                 ObjecteGuardar item = (ObjecteGuardar) parent.getItemAtPosition(position);
                 int x = instancia.getPosicio();
+
 
                 instancia.setPosicio(position);
                 SingletonProject.getInstance().afegirElement(item);
@@ -196,4 +235,5 @@ public class Formulari extends AppCompatActivity {
 
 
     }
+
 }

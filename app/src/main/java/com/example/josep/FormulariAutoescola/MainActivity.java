@@ -66,11 +66,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         buttonData.setOnClickListener(this);
 
-        /*ObjecteGuardar valors = SingletonProject.getInstance().agafarElement();
-
-        Log.i("OK", valors.toString());
-        editText1.setText(valors.getNom());
-        editText2.setText(valors.getData());*/
 
 
         //Listeners dels intents a les diferents activitats i traspàs de variables cap a les diferents activitats per, posteriorment, ficarles a l'objecteGuardar

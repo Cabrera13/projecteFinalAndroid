@@ -12,7 +12,7 @@
     android:focusable="true"
     android:focusableInTouchMode="true"
     android:orientation="vertical"
-    tools:context="com.example.josep.FormulariAutoescola.MainActivity"
+    tools:context="com.example.josep.FormulariAutoescola.Pantalles.MainActivity"
     >
 
     <LinearLayout

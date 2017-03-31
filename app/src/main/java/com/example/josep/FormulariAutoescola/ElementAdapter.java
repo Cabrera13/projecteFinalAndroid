@@ -7,6 +7,9 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 
+import com.example.josep.FormulariAutoescola.ObjecteGuardar;
+import com.example.josep.FormulariAutoescola.R;
+
 import java.util.List;
 
 public class ElementAdapter extends ArrayAdapter<ObjecteGuardar> {

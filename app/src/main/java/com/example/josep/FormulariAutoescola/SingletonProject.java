@@ -1,8 +1,5 @@
-package com.example.josep.FormulariAutoescola.Singleton;
+package com.example.josep.FormulariAutoescola;
 
-import com.example.josep.FormulariAutoescola.ObjecteGuardar;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class SingletonProject {

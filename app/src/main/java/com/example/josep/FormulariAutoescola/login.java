@@ -9,8 +9,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.josep.FormulariAutoescola.Singleton.SingletonProject;
-
 public class login extends AppCompatActivity {
     final Context context = this;
     Button buttonLogin;

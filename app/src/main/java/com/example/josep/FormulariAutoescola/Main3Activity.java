@@ -5,20 +5,16 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.example.josep.FormulariAutoescola.Singleton.SingletonProject;
 
 import java.util.ArrayList;
 
@@ -243,7 +239,46 @@ public class Main3Activity extends AppCompatActivity {
 
                     //Validacions de les preguntes correctes (Diferent per a cada activity)
 
+                    if (radioButton2.isChecked()){
+                        radioButton2.setBackgroundColor(Color.parseColor("#e74c3c"));
 
+                    }
+                    if (checkBox1.isChecked()){
+                        checkBox1.setBackgroundColor(Color.parseColor("#e74c3c"));
+
+
+                    }
+                    if (radioButton4.isChecked()){
+
+                        radioButton4.setBackgroundColor(Color.parseColor("#e74c3c"));
+
+
+                    }
+                    if (radioButton6.isChecked()){
+
+                        radioButton6.setBackgroundColor(Color.parseColor("#e74c3c"));
+
+
+                    }
+                    if (radioButton7.isChecked()){
+
+                        radioButton7.setBackgroundColor(Color.parseColor("#e74c3c"));
+
+                    }
+                    if (radioButton9.isChecked()){
+                        radioButton9.setBackgroundColor(Color.parseColor("#e74c3c"));
+
+                    }
+                    String x = "16";
+                    if (!editText2.getText().toString().equals(x)) {
+                        editText2.setBackgroundColor(Color.parseColor("#e74c3c"));
+
+                    }
+                    String x2 = "80";
+                    if (!editText3.getText().toString().equals(x2)) {
+                        editText3.setBackgroundColor(Color.parseColor("#e74c3c"));
+
+                    }
 
                 }
             }

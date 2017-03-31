@@ -3,32 +3,20 @@ package com.example.josep.FormulariAutoescola;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Color;
-import android.support.annotation.DrawableRes;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.ActionMode;
+import android.support.v7.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-
-import com.example.josep.FormulariAutoescola.Singleton.SingletonProject;
 
 import java.util.ArrayList;
-
-import static android.R.attr.mode;
 
 public class Formulari extends AppCompatActivity {
     final Context context = this;
@@ -37,14 +25,15 @@ public class Formulari extends AppCompatActivity {
     Button editarFormulari;
     Button esborrarFormulari;
     Button consultarFormulari;
-    MenuItem menu;
 
+    MenuItem menu;
+/*
     private MenuItem guardar;
     private MenuItem editar;
     private MenuItem borrar;
 
-/*
-    @Override
+
+
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.action_bar_list, menu);
         guardar = menu.getItem(0);
@@ -81,7 +70,7 @@ public class Formulari extends AppCompatActivity {
         list.setAdapter(adapter);
         adapter.notifyDataSetChanged();
 
-        
+
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView parent, View view, int position, long id) {
